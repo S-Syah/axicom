@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Page</title>
+    <style>
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input[type="text"], input[type="checkbox"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .button-container button {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button-container button:first-child {
+            background-color: #3498db;
+            color: #fff;
+        }
+        .button-container button:nth-child(2) {
+            background-color: #e74c3c;
+            color: #fff;
+        }
+        .button-container button:last-child {
+            background-color: #2ecc71;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>enable remainders </h1>
+        <form>
+            <label for="textbox">SMS:</label>
+            <input type="text" id="textbox" name="textbox">
+
+            <label>Select the number of days:</label>
+            <input type="checkbox" id="days7" name="days" value="7">
+            <label for="days7">7 Days</label>
+            <input type="checkbox" id="days5" name="days" value="5">
+            <label for "days5">5 Days</label>
+            <input type="checkbox" id="days3" name="days" value="3">
+            <label for="days3">3 Days</label>
+            <input type="checkbox" id="days2" name="days" value="2">
+            <label for="days2">2 Days</label>
+
+            <div class="button-container">
+                <button type="submit">Button 1</button>
+                <button type="button">Button 2</button>
+                <button type="reset">Button 3</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
